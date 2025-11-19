@@ -34,10 +34,9 @@ namespace MoviesRental.Domain.Entities
                 throw new DomainException($"DVD {Title} is not available to rent");
 
             var copies = Copies - 1;
-            UpdateCopies(copies)
-
-
+            UpdateCopies(copies);
         }
+
         public void ReturnCopy()
         {
             if (!Available)
