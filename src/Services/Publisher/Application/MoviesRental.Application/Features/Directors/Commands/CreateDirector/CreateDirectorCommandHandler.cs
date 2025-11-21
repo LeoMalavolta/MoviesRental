@@ -6,8 +6,8 @@ namespace MoviesRental.Application.Features.Directors.Commands.CreateDirector
 {
     public class CreateDirectorCommandHandler : IRequestHandler<CreateDirectorCommand, CreateDirectorResponse>
     {
-        public readonly IDirectorsWriteRepository _repository;
-        public readonly CreateDirectorCommandValidator _validator;
+        private readonly IDirectorsWriteRepository _repository;
+        private readonly CreateDirectorCommandValidator _validator;
 
         public CreateDirectorCommandHandler(IDirectorsWriteRepository repository, CreateDirectorCommandValidator validator)
         {

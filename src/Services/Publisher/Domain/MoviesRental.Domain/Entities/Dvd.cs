@@ -18,13 +18,13 @@ namespace MoviesRental.Domain.Entities
         public const int MIN_TITLE_LENGTH = 2;
         public const int MAX_TITLE_LENGTH = 50;
 
-        public Dvd(string title, EGenre genre, DateTime published, int copies, Guid directorId)
+        public Dvd(string title, int genre, DateTime published, int copies, Guid directorId)
         {
             UpdateTitle(title);
-            Genre = genre;
-            Published = published;
+            UpdateGenre(genre);
+            UpdatePublishedDate(published);
             UpdateCopies(copies);
-            DirectorId = directorId;
+            UpdateDirector(directorId);
             Available = copies > 0;
         }
 

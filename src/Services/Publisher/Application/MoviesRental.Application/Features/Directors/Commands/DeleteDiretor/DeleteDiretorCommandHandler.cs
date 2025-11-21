@@ -5,8 +5,8 @@ namespace MoviesRental.Application.Features.Directors.Commands.DeleteDiretor
 {
     public class DeleteDiretorCommandHandler : IRequestHandler<DeleteDiretorCommand, bool>
     {
-        public readonly IDirectorsWriteRepository _repository;
-        public readonly DeleteDiretorCommandValidator _validator;
+        private readonly IDirectorsWriteRepository _repository;
+        private readonly DeleteDiretorCommandValidator _validator;
 
         public DeleteDiretorCommandHandler(IDirectorsWriteRepository repository, DeleteDiretorCommandValidator validator)
         {
