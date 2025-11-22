@@ -1,5 +1,4 @@
 ﻿using FluentValidation;
-using MoviesRental.Application.Features.Dvds.Commands.RentDvd;
 
 namespace MoviesRental.Application.Features.Dvds.Commands.ReturnDvd
 {
