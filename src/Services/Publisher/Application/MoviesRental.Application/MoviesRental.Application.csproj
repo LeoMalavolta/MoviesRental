@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.0" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\..\..\BuildingBlocks\MoviesRental.Core\MoviesRental.Core.csproj" />
     <ProjectReference Include="..\..\Domain\MoviesRental.Domain\MoviesRental.Domain.csproj" />
   </ItemGroup>
